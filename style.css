@@ -95,6 +95,7 @@ li.dropdown {
   padding: 30px 40px;
   position: absolute;
   transform: translate(-50%, 50%);
+  top: 10%;
   left: 50%;
   right: 50%;
   border-radius: 20px;
