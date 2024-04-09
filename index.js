@@ -71,4 +71,5 @@ window.addEventListener("load", function(){
             document.querySelector(".popup").style.display = "block";
         },
         500
-    )
+)})
+      
