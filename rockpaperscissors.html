@@ -9,8 +9,10 @@
   </head>
   <body>
     <div id="top">
-      <h1>Cooler Math Games(Sorry for ugliness)</h1>
+      <h1>Cooler Math Games</h1>
     </div>
+    
+    <!-- Nav Bar -->
     <ul>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Games</a>
@@ -25,7 +27,16 @@
       <li ><a href="" id="Profile">Profile</a></li>
     </ul>
     
-    <section><p>rockpaperscissors</p></section>
+    <!-- Div that outputs message to  user. Gets input from javascript-->
+    <div id="rpsMessage">
+    </div>
+    <!-- Contains buttons for player option -->
+    <div id="rockpaperscissors">
+      <button type="button" id="Rock" onClick="RockPaperScissors(this.id);">Rock</button>
+      <button type="button" id="Paper" onClick="RockPaperScissors(this.id);">Paper</button>
+      <button type="button" id="Scissors" onClick="RockPaperScissors(this.id);">Scissors</button>
+    </div>
+
     <footer>
       CSE 201 Group 7
       We Love Dr. Khamaiseh

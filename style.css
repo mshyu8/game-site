@@ -25,12 +25,6 @@
     text-align: right;
   }
 
-
-
-
-
-
-
   ul {
   list-style-type: none;
   margin: 0;
@@ -83,4 +77,15 @@ li.dropdown {
 }
 #Profile {
     text-align: right;
+}
+
+/* Div that contains buttons for rock paper scissors */
+#rockpaperscissors {
+  text-align: center;
+}
+
+/* Div that contains message output for rock paper scissors */
+#rpsMessage {
+  text-align: center;
+  visibility: hidden;
 }
