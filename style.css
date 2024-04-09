@@ -89,3 +89,41 @@ li.dropdown {
   text-align: center;
   visibility: hidden;
 }
+.popup{
+  background-color: rgb(209, 209, 209);
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  right: 50%;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #169496;
+  display: none;
+}
+.popup button{
+  display: block;
+  color: #298284;
+  margin: -15px -15px -30px auto;
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.popup button:hover{
+  background-color: rgb(173, 173, 173);
+}
+.popup h1{
+  color: #298284;
+  font-size: 40px;
+}
+.popup p{
+  color: #298284;
+  font-size: 16px;
+  text-align: justify;
+  margin: 20px 0;
+}
