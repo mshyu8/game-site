@@ -60,3 +60,21 @@ function rpsResult(choice, computer, result) {
     }
 
   }
+
+  function ticChoice(choice) {
+    // Getting the column and row from the id. Could use these for 2d array
+    // values to find if someone has won.
+    column = choice % 10;
+    row = (choice / 10) - (column / 10);
+
+    //ex how to change image, size is too small. The images are just 
+    // 'x.png' and 'o.png', already added to the project. Can make subdirectory if wanted
+    document.getElementById(choice).innerHTML = '<img src="x.png" height="10" width = "10">';
+
+    // Ex how to change actual value of button so you know what is there 
+    // for checking win conditions
+    document.getElementById(choice).value = "X";
+    
+    // This should make it so the button can only be hit once
+    document.getElementById(choice).onClick = null;
+  }
