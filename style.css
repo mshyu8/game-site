@@ -128,3 +128,42 @@ li.dropdown {
   text-align: justify;
   margin: 20px 0;
 }
+
+/*History Page Style*/
+.history {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: grid;
+}
+.game-container{
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 800px;
+  margin: auto;
+}
+.game-history{
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.history-img{
+  float: left;
+  margin: 5px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: #169496;
+}
+.history h1{
+  font-size: 40px;
+  text-align: center;
+}
+.history h2{
+  font-size: 30px;
+}
+.history p{
+  text-align: justify;
+}
