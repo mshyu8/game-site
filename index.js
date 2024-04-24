@@ -10,7 +10,9 @@ function rpsResult(choice, computer, result) {
     // Making it visible for the user
     divMessage.style.visibility="visible";
     // Outputting result into the div
-    divMessage.innerHTML = result + "<br>You Chose: " + choice + "<br>Computer Chose: " + computer;
+    playerResult = "rpsImg/" + choice + ".jpg";
+    computerResult = "rpsImg/" + computer + ".jpg";
+    divMessage.innerHTML = result + "<br>You Chose: <img src='" + playerResult + "'/>" +  "<br>Computer Chose: <img src='" + computerResult + "'\>";
   }
   
   function RockPaperScissors(choice) {
