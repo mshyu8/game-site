@@ -10,9 +10,11 @@ function rpsResult(choice, computer, result) {
     // Making it visible for the user
     divMessage.style.visibility="visible";
     // Outputting result into the div
-    divMessage.innerHTML = result + "<br>You Chose: " + choice + "<br>Computer Chose: " + computer;
+    playerResult = "rpsImg/" + choice + ".jpg";
+    computerResult = "rpsImg/" + computer + ".jpg";
+    divMessage.innerHTML = result + "<br>You Chose: <img src='" + playerResult + "'/>" + "<br>Computer Chose: <img src='" + computerResult + "'/>";
   }
-  
+
   function RockPaperScissors(choice) {
     // Getting random choice (0 = rock, 1 = paper, 2 = scissors)
     computerChoice = Math.floor(Math.random() * 3);
@@ -63,6 +65,7 @@ function rpsResult(choice, computer, result) {
 //How to play pop-up close button
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display ="none";
+    rpsGame.style.visibility="visible";
 });
 //How to play pop-up delay
 window.addEventListener("load", function(){
