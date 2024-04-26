@@ -80,17 +80,17 @@ display: block;
 }
 /*Rock Paper Scissors Styling */
 #rpsGame {
-visibility: hidden;
-border: 5px solid;
-position: absolute;
-top: 57%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 250px;
-background-color: rgb(24, 178, 192);
-border-radius: 20px;
-border-style: solid;
-border-color: #169496;
+  visibility: hidden;
+  border: 5px solid;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 250px;
+  background-color: rgb(24, 178, 192);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #169496;
 }
 /* Div that contains buttons for rock paper scissors */
 #rockpaperscissors {
@@ -98,80 +98,80 @@ text-align: center;
 }
 /* Div that contains message output for rock paper scissors */
 #rpsMessage {
-text-align: center;
-visibility: hidden;
-font-size: 30px;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30px;
 }
 .button {
-position: relative;
-border-radius: 12px;
-padding: 35px 35px;
-cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  padding: 35px 35px;
+  cursor: pointer;
 }
 .button:hover {
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 .button:active {
-background-color: #ffffff;
-transform: translateY(4px);
+  background-color: #ffffff;
+  transform: translateY(4px);
 }
 
 #Rock {
-top: 200px;
-left: -200px;
+  top: 200px;
+  left: -200px;
 }
 
 #Paper {
-top: 200px;
-left: 0px;
+  top: 200px;
+  left: 0px;
 }
 #Scissors {
-top: 200px;
-left: 200px;
+  top: 200px;
+  left: 200px;
 }
 
 img {
-width: 40px;
-height: 40px
+  width: 40px;
+  height: 40px
 }
 /* Pop up styling */
 .popup{
-background-color: rgb(209, 209, 209);
-width: 450px;
-padding: 30px 40px;
-position: absolute;
-transform: translate(-50%, 50%);
-top: 10%;
-left: 50%;
-right: 50%;
-border-radius: 20px;
-border-style: solid;
-border-width: 12px;
-border-color: #169496;
-display: none;
+  background-color: rgb(209, 209, 209);
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 10%;
+  left: 50%;
+  right: 50%;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #169496;
+  display: none;
 }
 .popup button{
-display: block;
-color: #298284;
-margin: -15px -15px -30px auto;
-background-color: transparent;
-font-size: 30px;
-border: none;
-border-radius: 20px;
-outline: none;
-cursor: pointer;
+  display: block;
+  color: #298284;
+  margin: -15px -15px -30px auto;
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 }
 .popup button:hover{
-background-color: rgb(173, 173, 173);
+  background-color: rgb(173, 173, 173);
 }
 .popup h1{
-color: #298284;
-font-size: 40px;
+  color: #298284;
+  font-size: 40px;
 }
 .popup p{
-color: #298284;
-font-size: 16px;
-text-align: justify;
-margin: 20px 0;
+  color: #298284;
+  font-size: 16px;
+  text-align: justify;
+  margin: 20px 0;
 }
 

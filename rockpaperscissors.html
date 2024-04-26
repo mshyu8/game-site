@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,6 @@
     <div id="top">
       <h1>Cooler Math Games</h1>
     </div>
-    
     <!-- Nav Bar -->
     <ul>
       <li class="dropdown">
@@ -26,16 +26,34 @@
       <li><a href="creator.html">Creators</a></li>
       <li ><a href="" id="Profile">Profile</a></li>
     </ul>
-    
+    <!--How to play pop up-->
+    <div class="popup">
+      <button id ="close">&times;</button>
+      <h1>How To Play </h1>
+      <p>
+        Rock paper scissors is a classic luck based game in which each player selects one of the three items. The items are then compared using these rules:<Br>Rock > Scissors, Scissors > Paper, Paper > Rock
+      </p>
+      <p>
+        Select either rock, paper, or scissors. The computer will also select one. Your selection will be compared with the computer's and the program will show if you have won, lost, or tied.
+      </p>
+    </div>
+    <div id="rpsGame">  
     <!-- Div that outputs message to  user. Gets input from javascript-->
     <div id="rpsMessage">
     </div>
     <!-- Contains buttons for player option -->
     <div id="rockpaperscissors">
-      <button type="button" id="Rock" onClick="RockPaperScissors(this.id);">Rock</button>
-      <button type="button" id="Paper" onClick="RockPaperScissors(this.id);">Paper</button>
-      <button type="button" id="Scissors" onClick="RockPaperScissors(this.id);">Scissors</button>
+      <button type="button" class="button" id="Rock" onClick="RockPaperScissors(this.id);">
+        <img src = "rpsImg/Rock.jpg"/>
+      </button>
+      <button type="button" class="button" id="Paper" onClick="RockPaperScissors(this.id);">
+        <img src = "rpsImg/Paper.jpg"/>
+      </button>
+      <button type="button" class="button" id="Scissors" onClick="RockPaperScissors(this.id);">
+        <img src = "rpsImg/Scissors.jpg"/>
+      </button>
     </div>
+  </div>
 
     <footer>
       CSE 201 Group 7
