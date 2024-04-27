@@ -175,3 +175,15 @@ img {
   margin: 20px 0;
 }
 
+
+.tttcontainer {
+  text-align: center;
+}
+
+.boxButton {
+  background-color:#169496;
+  padding: 20px;
+  color: white;
+  border: none;
+  margin: 5px;;
+}
