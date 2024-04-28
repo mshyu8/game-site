@@ -89,3 +89,40 @@ li.dropdown {
   text-align: center;
   visibility: hidden;
 }
+
+/* ------Index Page------ */
+#indexGames {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+#welcomeMessage {
+  text-align: justify;
+}
+
+#welcomeTitle {
+  font-size: 1.3em;
+}
+
+.indexButtons {
+  width: 25%;
+  font-size: 1.5em;
+  background-color: white;
+  border-color: #298284;
+  border-radius: 3%;
+}
+
+.indexButtons:hover {
+  background-color: #298284;
+  color: white;
+}
+
+#indexRock {
+  margin-left: 25%;
+}
+
+.gameDesc {
+  font-size: 0.8em;
+}
