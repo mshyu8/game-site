@@ -279,3 +279,14 @@ text-align: center;
   margin: 5px;;
 }
 
+/* CREATORS PAGE */
+
+figure {
+  float: left;
+  clear: both;
+}
+
+.member {
+  overflow: auto;
+  padding-right: 20;
+}
