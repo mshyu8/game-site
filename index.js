@@ -10,9 +10,11 @@ function rpsResult(choice, computer, result) {
     // Making it visible for the user
     divMessage.style.visibility="visible";
     // Outputting result into the div
-    divMessage.innerHTML = result + "<br>You Chose: " + choice + "<br>Computer Chose: " + computer;
+    playerResult = "rpsImg/" + choice + ".jpg";
+    computerResult = "rpsImg/" + computer + ".jpg";
+    divMessage.innerHTML = result + "<br>You Chose: <img src='" + playerResult + "'/>" + "<br>Computer Chose: <img src='" + computerResult + "'/>";
   }
-  
+
   function RockPaperScissors(choice) {
     // Getting random choice (0 = rock, 1 = paper, 2 = scissors)
     computerChoice = Math.floor(Math.random() * 3);
@@ -63,6 +65,7 @@ function rpsResult(choice, computer, result) {
 //How to play pop-up close button
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display ="none";
+    rpsGame.style.visibility="visible";
 });
 //How to play pop-up delay
 window.addEventListener("load", function(){
@@ -73,3 +76,22 @@ window.addEventListener("load", function(){
         500
 )})
       
+
+
+  function ticChoice(choice) {
+    // Getting the column and row from the id. Could use these for 2d array
+    // values to find if someone has won.
+    column = choice % 10;
+    row = (choice / 10) - (column / 10);
+
+    //ex how to change image, size is too small. The images are just 
+    // 'x.png' and 'o.png', already added to the project. Can make subdirectory if wanted
+    document.getElementById(choice).innerHTML = '<img src="x.png" height="10" width = "10">';
+
+    // Ex how to change actual value of button so you know what is there 
+    // for checking win conditions
+    document.getElementById(choice).value = "X";
+    
+    // This should make it so the button can only be hit once
+    document.getElementById(choice).onClick = null;
+  }

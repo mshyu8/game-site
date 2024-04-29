@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="top">
-      <h1>Cooler Math Games(Sorry for ugliness)</h1>
+      <h1>Cooler Math Games</h1>
     </div>
     <ul>
       <li class="dropdown">
@@ -24,7 +24,9 @@
       <li><a href="creator.html">Creators</a></li>
       <li ><a href="" id="Profile">Profile</a></li>
     </ul>
-    <section><p>tictactoe</p></section>
+    <div class="tttcontainer">
+
+    <h1>Tic Tac Toe</h>
     <!--How to play pop-up-->
     <div class="popup">
       <button id ="close">&times;</button>
@@ -38,6 +40,32 @@
          and nobody has 3 in a row, the game is a tie.
       </p>
     </div>
+
+    <!--First row, button id's are determined by row and then column for the 
+    2d array. [In this row, Row = 0]-->
+    <div id="ticRow1">
+      <button class="boxButton" type="button" id="00" onClick="ticChoice(this.id)">00</button>
+      <button class="boxButton" type="button" id="01" onClick="ticChoice(this.id)">01</button>
+      <button class="boxButton" type="button" id="02" onClick="ticChoice(this.id)">02</button>
+    </div>
+
+    <!--First row, button id's are determined by row and then column for the 
+    2d array. [In this row, Row = 1]-->
+    <div id="ticRow2">
+      <button class="boxButton" type="button" id="10" onClick="ticChoice(this.id)">10</button>
+      <button class="boxButton" type="button" id="11" onClick="ticChoice(this.id)">11</button>
+      <button class="boxButton" type="button" id="12" onClick="ticChoice(this.id)">12</button>
+    </div>
+
+    <!--First row, button id's are determined by row and then column for the 
+    2d array. [In this row, Row = 2]-->
+    <div id="ticRow3">
+      <button class="boxButton" type="button" id="20" onClick="ticChoice(this.id)">20</button>
+      <button class="boxButton" type="button" id="21" onClick="ticChoice(this.id)">21</button>
+      <button class="boxButton" type="button" id="22" onClick="ticChoice(this.id)">22</button>
+    </div>
+
+  </div>
     <footer>
       CSE 201 Group 7
       We Love Dr. Khamaiseh

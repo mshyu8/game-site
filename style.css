@@ -34,23 +34,23 @@ ul {
 }
 
 li {
-  float: left;
+float: left;
 }
 
 li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #298284;
+background-color: #298284;
 }
 
 li.dropdown {
-  display: inline-block;
+display: inline-block;
 }
 
 .dropdown-content {
@@ -63,11 +63,11 @@ li.dropdown {
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -75,23 +75,69 @@ li.dropdown {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
 
 #Profile {
   text-align: right;
 }
-
+/*Rock Paper Scissors Styling */
+#rpsGame {
+  visibility: hidden;
+  border: 5px solid;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 250px;
+  background-color: rgb(24, 178, 192);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #169496;
+}
 /* Div that contains buttons for rock paper scissors */
 #rockpaperscissors {
-  text-align: center;
+text-align: center;
 }
-
 /* Div that contains message output for rock paper scissors */
 #rpsMessage {
   text-align: center;
   visibility: hidden;
+  font-size: 30px;
 }
+.button {
+  position: relative;
+  border-radius: 12px;
+  padding: 35px 35px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #ffffff;
+}
+.button:active {
+  background-color: #ffffff;
+  transform: translateY(4px);
+}
+
+#Rock {
+  top: 200px;
+  left: -200px;
+}
+
+#Paper {
+  top: 200px;
+  left: 0px;
+}
+#Scissors {
+  top: 200px;
+  left: 200px;
+}
+
+img {
+  width: 40px;
+  height: 40px
+}
+/* Pop up styling */
 
 /* ------Index Page------ */
 #indexGames {
@@ -218,3 +264,18 @@ li.dropdown {
 .history p {
   text-align: justify;
 }
+
+
+
+.tttcontainer {
+  text-align: center;
+}
+
+.boxButton {
+  background-color:#169496;
+  padding: 25px;
+  color: white;
+  border: none;
+  margin: 5px;;
+}
+
