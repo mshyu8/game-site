@@ -1,39 +1,31 @@
-<<<<<<< Updated upstream
-=======
-  #top {
-    text-align: center;
-    color: white;
-    background-color: #7CC8C7;
-    padding:10px;
-  }
+#top {
+  text-align: center;
+  color: white;
+  background-color: #7CC8C7;
+  padding: 10px;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 20px;
-    width: 100%;
-    background-color: #169496;
-    color: white;
-    text-align: left;
-  }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #169496;
+  color: white;
+  text-align: left;
+}
 
-  #footerRight {
-    text-align: right;
-  }
+#footerRight {
+  text-align: right;
+}
 
-
-
-
-
-
-
-  ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -66,7 +58,7 @@ li.dropdown {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -78,108 +70,16 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 #Profile {
-    text-align: right;
-}
-
-
-
-/* CREATORS PAGE */
-
-figure {
-  float: left;
-  clear: both;
-}
-
-.member {
-  overflow: auto;
-  padding-right: 20;
-}
->>>>>>> Stashed changes
-  #top {
-    text-align: center;
-    color: white;
-    background-color: #7CC8C7;
-    padding:10px;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 20px;
-    width: 100%;
-    background-color: #169496;
-    color: white;
-    text-align: left;
-  }
-
-  #footerRight {
-    text-align: right;
-  }
-
-  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #169496;
-}
-
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #298284;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-#Profile {
-    text-align: right;
+  text-align: right;
 }
 
 /* Div that contains buttons for rock paper scissors */
@@ -229,7 +129,8 @@ li.dropdown {
 .gameDesc {
   font-size: 0.8em;
 }
-.popup{
+
+.popup {
   background-color: rgb(209, 209, 209);
   width: 450px;
   padding: 30px 40px;
@@ -244,7 +145,8 @@ li.dropdown {
   border-color: #169496;
   display: none;
 }
-.popup button{
+
+.popup button {
   display: block;
   color: #298284;
   margin: -15px -15px -30px auto;
@@ -255,14 +157,17 @@ li.dropdown {
   outline: none;
   cursor: pointer;
 }
-.popup button:hover{
+
+.popup button:hover {
   background-color: rgb(173, 173, 173);
 }
-.popup h1{
+
+.popup h1 {
   color: #298284;
   font-size: 40px;
 }
-.popup p{
+
+.popup p {
   color: #298284;
   font-size: 16px;
   text-align: justify;
@@ -277,19 +182,22 @@ li.dropdown {
   border-radius: 8px;
   display: grid;
 }
-.game-container{
+
+.game-container {
   margin-bottom: 20px;
   overflow: hidden;
   display: inline-block;
   max-width: 800px;
   margin: auto;
 }
-.game-history{
+
+.game-history {
   max-width: fit-content;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.history-img{
+
+.history-img {
   float: left;
   margin: 5px;
   border-radius: 20px;
@@ -297,13 +205,16 @@ li.dropdown {
   border-width: 6px;
   border-color: #169496;
 }
-.history h1{
+
+.history h1 {
   font-size: 40px;
   text-align: center;
 }
-.history h2{
+
+.history h2 {
   font-size: 30px;
 }
-.history p{
+
+.history p {
   text-align: justify;
 }
