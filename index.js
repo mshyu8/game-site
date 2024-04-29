@@ -12,7 +12,7 @@ function rpsResult(choice, computer, result) {
     // Outputting result into the div
     playerResult = "rpsImg/" + choice + ".jpg";
     computerResult = "rpsImg/" + computer + ".jpg";
-    divMessage.innerHTML = result + "<br>You Chose: <img src='" + playerResult + "'/>" + "<br>Computer Chose: <img src='" + computerResult + "'/>";
+    divMessage.innerHTML = result + "<br>You Chose: <img src='" + playerResult + "' class='RPSImg'/>" + "<br>Computer Chose: <img src='" + computerResult + "' class='RPSImg'/>";
   }
 
   function RockPaperScissors(choice) {
