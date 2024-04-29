@@ -36,6 +36,18 @@
     .cell:hover {
         background-color: #e0e0e0; /* Lighten cell on hover for a visual effect */
     }
+    .modal2 {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
   </style>
 
   </head>
@@ -81,6 +93,13 @@
       </div>
     </div>
 
+    <div id="winModal" class="modal2">
+      <div class="modal-content">
+        <span id="closeWin" class="close">Close</span>
+        <span id="restartWin" class="restart">Restart Game</span>
+        <p>Congrats!! You have won the game!!</p>
+      </div>
+    </div>
 
     
   <section><p>tictactoe</p></section>
@@ -116,27 +135,28 @@
       function checkWin(currentPlayer) {
           if ((board[0][0] != "") && board[0][0] == board[0][1] && board[0][0] == board[0][2]) {
               console.log("Congrats " + currentPlayer);
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[1][0] != "") &&board[1][0] == board[1][1] && board[1][0] == board[1][2]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[2][0] != "") &&board[2][0] == board[2][1] && board[2][0] == board[2][2]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[0][0] != "") &&board[0][0] == board[1][0] && board[0][0] == board[2][0]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[0][1] != "") &&board[0][1] == board[1][1] && board[0][1] == board[2][1]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[0][2] != "") &&board[0][2] == board[1][2] && board[0][2] == board[2][2]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[0][0] != "") &&board[0][0] == board[1][1] && board[0][0] == board[2][2]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           } else if ((board[0][2] != "") &&board[0][2] == board[1][1] && board[0][2] == board[2][0]) {
               console.log("Congrats " + currentPlayer);
-  
+              document.querySelector("#winModal").style.display = "block";
           }
       }
   
