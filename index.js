@@ -60,3 +60,16 @@ function rpsResult(choice, computer, result) {
     }
 
   }
+//How to play pop-up close button
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display ="none";
+});
+//How to play pop-up delay
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        500
+)})
+      
