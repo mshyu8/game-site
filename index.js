@@ -60,3 +60,32 @@ function rpsResult(choice, computer, result) {
     }
 
   }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    let modal = document.getElementById("myModal");
+
+    let menuBtn = document.getElementById("menuBtn");
+
+    let resume = document.getElementsByClassName("close")[0];
+
+    let restart = document.querySelector(".restart");
+
+    restart.onclick = function() {
+      window.location.reload();
+    }
+
+    menuBtn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    resume.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  })

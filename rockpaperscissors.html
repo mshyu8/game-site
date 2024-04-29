@@ -28,13 +28,24 @@
     </ul>
     
     <!-- Div that outputs message to  user. Gets input from javascript-->
-    <div id="rpsMessage">
-    </div>
+    <div id="rpsMessage"></div>
     <!-- Contains buttons for player option -->
     <div id="rockpaperscissors">
       <button type="button" id="Rock" onClick="RockPaperScissors(this.id);">Rock</button>
       <button type="button" id="Paper" onClick="RockPaperScissors(this.id);">Paper</button>
       <button type="button" id="Scissors" onClick="RockPaperScissors(this.id);">Scissors</button>
+    </div>
+
+    <div>
+      <button id="menuBtn">Open Menu</button>
+    </div>
+    <div id="myModal" class="modal" display="block">
+
+      <div class="modal-content">
+        <span class="close">▷</span>
+        <span class="restart">↻</span>
+        <p>Heres some text explaining how the game works...</p>
+      </div>
     </div>
 
     <footer>
