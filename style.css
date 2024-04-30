@@ -290,3 +290,13 @@ figure {
   overflow: auto;
   padding-right: 20;
 }
+
+/** Home Link Styling **/
+#homeLink {
+  text-align: center;
+  color: white;
+  background-color: #7CC8C7;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+}
