@@ -69,22 +69,22 @@ function rpsResult(choice, computer, result) {
 
     let resume = document.getElementsByClassName("close")[0];
 
-    let modal2 = document.querySelector("#winModal");
+    //let modal2 = document.querySelector("#winModal");
 
     let restart = document.querySelector(".restart");
 
-    let winRestart = document.querySelector("#restartWin");
+    //let winRestart = document.querySelector("#restartWin");
 
-    let winClose = document.querySelector("#closeWin");
+    //let winClose = document.querySelector("#closeWin");
 
-    winRestart.onclick = function() {
-      window.location.reload();
-      modal2.style.display = "none";
-    }
+    // winRestart.onclick = function() {
+    //   window.location.reload();
+    //   modal2.style.display = "none";
+    // }
 
-    winClose.onclick = function() {
-      modal2.style.display = "none";
-    }
+    // winClose.onclick = function() {
+    //   modal2.style.display = "none";
+    // }
 
     restart.onclick = function() {
       window.location.reload();
