@@ -289,6 +289,7 @@ figure {
 .member {
   overflow: auto;
   padding-right: 20;
+}
   #top {
     text-align: center;
     color: white;
@@ -405,7 +406,7 @@ li.dropdown {
 }
 
 /* The Close Button */
-.close,
+.closeM,
 .restart {
   color: #aaa;
   float: right;
@@ -415,8 +416,8 @@ li.dropdown {
 }
 
 
-.close:hover,
-.close:focus,
+.closeM:hover,
+.closeM:focus,
 .restart:hover,
 .restart:focus {
   color: black;
@@ -426,6 +427,8 @@ li.dropdown {
 
 #menuBtn {
   background-color: #7CC8C7;
-  margin-left: 25%;
+  float: left;
+  position: relative;
+  text-align: left;
   color: white;
 }

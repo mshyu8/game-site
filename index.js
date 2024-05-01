@@ -83,7 +83,7 @@ window.addEventListener("load", function(){
 
     let menuBtn = document.getElementById("menuBtn");
 
-    let resume = document.getElementsByClassName("close")[0];
+    let resume = document.getElementsByClassName("closeM")[0];
 
     //let modal2 = document.querySelector("#winModal");
 
