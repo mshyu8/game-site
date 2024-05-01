@@ -78,20 +78,46 @@ window.addEventListener("load", function(){
       
 
 
-  function ticChoice(choice) {
-    // Getting the column and row from the id. Could use these for 2d array
-    // values to find if someone has won.
-    column = choice % 10;
-    row = (choice / 10) - (column / 10);
+  document.addEventListener("DOMContentLoaded", function() {
+    let modal = document.getElementById("myModal");
 
-    //ex how to change image, size is too small. The images are just 
-    // 'x.png' and 'o.png', already added to the project. Can make subdirectory if wanted
-    document.getElementById(choice).innerHTML = '<img src="x.png" height="10" width = "10">';
+    let menuBtn = document.getElementById("menuBtn");
 
-    // Ex how to change actual value of button so you know what is there 
-    // for checking win conditions
-    document.getElementById(choice).value = "X";
-    
-    // This should make it so the button can only be hit once
-    document.getElementById(choice).onClick = null;
-  }
+    let resume = document.getElementsByClassName("close")[0];
+
+    //let modal2 = document.querySelector("#winModal");
+
+    let restart = document.querySelector(".restart");
+
+    //let winRestart = document.querySelector("#restartWin");
+
+    //let winClose = document.querySelector("#closeWin");
+
+    // winRestart.onclick = function() {
+    //   window.location.reload();
+    //   modal2.style.display = "none";
+    // }
+
+    // winClose.onclick = function() {
+    //   modal2.style.display = "none";
+    // }
+
+    restart.onclick = function() {
+      window.location.reload();
+      modal.style.display = "none";
+    }
+
+    menuBtn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    resume.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  })
