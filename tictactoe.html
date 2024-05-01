@@ -12,7 +12,7 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: #f9f9f9; /* Light gray background for the container */
+        background-color: white; /* Light gray background for the container */
     }
     .board {
         display: grid;
@@ -68,9 +68,7 @@
       <li><a href="creator.html">Creators</a></li>
       <li ><a href="" id="Profile">Profile</a></li>
     </ul>
-    <div>
-      <button id="menuBtn">Open Menu</button>
-    </div>
+    
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">▷</span>
@@ -91,6 +89,9 @@
           <div class="cell" id="21" onclick="makeMove(this)"> </div>
           <div class="cell" id="22" onclick="makeMove(this)"> </div>
       </div>
+      <div>
+        <button id="menuBtn">Open Menu</button>
+      </div>
     </div>
 
     <div id="winModal" class="modal2">
@@ -102,7 +103,6 @@
     </div>
 
     
-  <section><p>tictactoe</p></section>
   <footer>
       CSE 201 Group 7
       We Love Dr. Khamaiseh

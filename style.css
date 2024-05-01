@@ -132,3 +132,9 @@ li.dropdown {
   text-decoration: none;
   cursor: pointer;
 }
+
+#menuBtn {
+  background-color: #7CC8C7;
+  margin-left: 25%;
+  color: white;
+}
